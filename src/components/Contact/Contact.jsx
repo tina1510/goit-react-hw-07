@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contactsOps";
 
 
-const Contact = ({ date: { name, number, id } }) => {
+const Contact = ({ contact: { name, number, id } }) => {
     const dispatch = useDispatch();
     return (
         <div className={css.contactContainer}> 
